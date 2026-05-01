@@ -2130,7 +2130,7 @@ function renderQuiz() {
     
     let html = `
         <div class="header" style="display: flex; justify-content: space-between; font-size: 16px;">
-            <span>${q.unit === 'chapter1' ? 'Chapter 1' : 'Chapter 2'}</span>
+            <span>${q.unit.replace('chapter', 'Chapter ')}</span>
             <span>題目 ${currentIndex + 1} / ${currentQuestions.length}</span>
         </div>
         <div class="content">
